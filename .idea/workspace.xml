@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e63f776d-aded-4909-86d7-f395eb0e4ddf" name="Default Changelist" comment="" />
+    <list default="true" id="e63f776d-aded-4909-86d7-f395eb0e4ddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/simple/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/simple/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumerOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumerTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Consumer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Producer.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +25,10 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -30,16 +45,23 @@
     </option>
   </component>
   <component name="ProjectId" id="1QRelkAYzbe4MwtwYbqFhZJoy5p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="rabbitMQDemo.work" />
       <recent name="rabbitMQDemo.simple" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\项目\RabbitMQ\src\main\java" />
+      <recent name="E:\项目\src\main\java\rabbitMQDemo\work" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -54,13 +76,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Consumer">
-    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rabbitMQDemo.simple.Consumer" />
+  <component name="RunManager" selected="Application.Consumer (1)">
+    <configuration name="Consumer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="simple.Consumer" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rabbitMQDemo.simple.*" />
+          <option name="PATTERN" value="simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +90,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rabbitMQDemo.simple.Producer" />
+    <configuration name="Producer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="simple.Producer" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rabbitMQDemo.simple.*" />
+          <option name="PATTERN" value="simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkConsumerOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="work.WorkConsumerOne" />
+      <module name="RabbitMQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="work.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkConsumerTwo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="work.WorkConsumerTwo" />
+      <module name="RabbitMQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="work.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkProducer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="work.WorkProducer" />
+      <module name="RabbitMQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="work.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Consumer" />
-        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Consumer (1)" />
+        <item itemvalue="Application.Producer (1)" />
+        <item itemvalue="Application.WorkConsumerTwo (1)" />
+        <item itemvalue="Application.WorkConsumerOne" />
+        <item itemvalue="Application.WorkProducer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -98,11 +162,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567737989049</updated>
-      <workItem from="1567737990844" duration="8770000" />
+      <workItem from="1567737990844" duration="11625000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.flying.rabbitmq.api.consumer;
+package topics;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -8,7 +8,7 @@ import simple.MyConsumer;
 /**
  * 自定义消费者类型
  */
-public class Consumer {
+public class TopicsConsumer2 {
     public static void main(String[] args) throws Exception {
         // 创建工厂对象
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -27,7 +27,7 @@ public class Consumer {
         // 创建频道
         Channel channel = connection.createChannel();
 
-        String queueName = "success";
+        String queueName = "topics_queue_2";
 
         channel.queueDeclare(queueName, false, false, false, null);
         /**

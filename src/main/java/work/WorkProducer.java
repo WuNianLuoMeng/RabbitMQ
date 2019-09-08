@@ -54,5 +54,4 @@ public class WorkProducer {
         channel.close();
         connection.close();
     }
-
 }

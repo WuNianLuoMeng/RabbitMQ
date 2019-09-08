@@ -18,6 +18,13 @@
             </artifactId>
             <version>5.6.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.24</version>
+        </dependency>
+
     </dependencies>
 
 </project>

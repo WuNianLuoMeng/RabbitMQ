@@ -1,4 +1,4 @@
-package com.flying.rabbitmq.api.consumer;
+package routingKey;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -8,7 +8,7 @@ import simple.MyConsumer;
 /**
  * 自定义消费者类型
  */
-public class Consumer {
+public class RoutingConsumer1 {
     public static void main(String[] args) throws Exception {
         // 创建工厂对象
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -27,9 +27,9 @@ public class Consumer {
         // 创建频道
         Channel channel = connection.createChannel();
 
-        String queueName = "success";
+        String queueName = "routing_queue_1";
 
-        channel.queueDeclare(queueName, false, false, false, null);
+        channel.queueDeclare(queueName, true, false, false, null);
         /**
          * 参数列表
          * 1，监听的消息队列的名称

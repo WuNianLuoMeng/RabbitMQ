@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63f776d-aded-4909-86d7-f395eb0e4ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/simple/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simple/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumerOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumerTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/FanoutConsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/FanoutConsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fanout/FanoutProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/routingKey/RoutingConsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/routingKey/RoutingConsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/routingKey/RoutingKeyProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/simple/MyConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topics/TopicsConsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topics/TopicsConsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topics/TopicsProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/work/WorkConsumer2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Consumer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rabbitMQDemo/simple/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simple/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simple/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simple/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simple/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/WorkConsumerOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/WorkConsumerTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work/WorkProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/work/WorkProducer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,17 +58,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/topics" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="work" />
+      <recent name="simple" />
       <recent name="rabbitMQDemo.work" />
       <recent name="rabbitMQDemo.simple" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\项目\RabbitMQ\src\main\java\topics" />
+      <recent name="E:\项目\RabbitMQ\src\main\java\routingKey" />
+      <recent name="E:\项目\RabbitMQ\src\main\java\fanout" />
       <recent name="E:\项目\RabbitMQ\src\main\java" />
       <recent name="E:\项目\src\main\java\rabbitMQDemo\work" />
     </key>
@@ -76,13 +90,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Consumer (1)">
-    <configuration name="Consumer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simple.Consumer" />
+  <component name="RunManager" selected="Application.TopicsConsumer2">
+    <configuration name="RoutingConsumer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="routingKey.RoutingConsumer2" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simple.*" />
+          <option name="PATTERN" value="routingKey.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simple.Producer" />
+    <configuration name="RoutingKeyProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="routingKey.RoutingKeyProducer" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simple.*" />
+          <option name="PATTERN" value="routingKey.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkConsumerOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="work.WorkConsumerOne" />
+    <configuration name="TopicsConsumer1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="topics.TopicsConsumer1" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="work.*" />
+          <option name="PATTERN" value="topics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkConsumerTwo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="work.WorkConsumerTwo" />
+    <configuration name="TopicsConsumer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="topics.TopicsConsumer2" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="work.*" />
+          <option name="PATTERN" value="topics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkProducer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="work.WorkProducer" />
+    <configuration name="TopicsProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="topics.TopicsProducer" />
       <module name="RabbitMQ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="work.*" />
+          <option name="PATTERN" value="topics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Consumer (1)" />
-        <item itemvalue="Application.Producer (1)" />
-        <item itemvalue="Application.WorkConsumerTwo (1)" />
-        <item itemvalue="Application.WorkConsumerOne" />
-        <item itemvalue="Application.WorkProducer (1)" />
+        <item itemvalue="Application.TopicsConsumer2" />
+        <item itemvalue="Application.TopicsConsumer1" />
+        <item itemvalue="Application.TopicsProducer" />
+        <item itemvalue="Application.RoutingKeyProducer" />
+        <item itemvalue="Application.RoutingConsumer2" />
       </list>
     </recent_temporary>
   </component>
@@ -162,8 +176,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567737989049</updated>
-      <workItem from="1567737990844" duration="11625000" />
+      <workItem from="1567737990844" duration="17569000" />
+      <workItem from="1567842551338" duration="271000" />
+      <workItem from="1567846461252" duration="1203000" />
+      <workItem from="1567906898493" duration="4746000" />
     </task>
+    <task id="LOCAL-00001" summary="修改目录结构">
+      <created>1567755340427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567755340428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,10 +199,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/simple/Producer.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/topics/TopicsProducer.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

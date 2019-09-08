@@ -1,5 +1,6 @@
-package simple;
+package fanout;
 
+import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -8,9 +9,9 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 /**
- * 简单模式的生产者
+ * 工作模式的生产者
  */
-public class Producer {
+public class FanoutProducer {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 创建工厂对象
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -38,7 +39,22 @@ public class Producer {
          * 4，在消息使用完之后，是否删除消息
          * 5，附加参数
          */
-        channel.queueDeclare("success",false, false, false, null);
+        channel.queueDeclare("fanout_queue_1",true, false, false, null);
+        channel.queueDeclare("fanout_queue_2",true, false, false, null);
+
+        // 声明交换机
+        channel.exchangeDeclare("exchange", BuiltinExchangeType.FANOUT);
+
+        // 将队列与交换机进行绑定
+        /**
+         * 参数列表
+         * 1，队列名称
+         * 2，交换机名称
+         * 3，routingKey
+         */
+        channel.queueBind("fanout_queue_1", "exchange", "");
+        channel.queueBind("fanout_queue_2", "exchange", "");
+
         // 创建消息
         String message = "Hello World";
         // 消息发送
@@ -49,10 +65,9 @@ public class Producer {
          * 3，附加数据，可以不写
          * 4，所要发送的消息
          */
-        channel.basicPublish("", "success", null, message.getBytes());
+        channel.basicPublish("exchange", "", null, message.getBytes());
         // 关闭资源
         channel.close();
         connection.close();
     }
-
 }
